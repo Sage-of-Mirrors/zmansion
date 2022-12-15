@@ -1,0 +1,24 @@
+path: filesystem/sys/main.dol
+r13: 0x804D7F60
+r2: 0x804E1880
+section_defs:
+  text:
+    - name: .init
+    - name: .text
+  data:
+    - name: extab_
+      attr: a
+    - name: extabindex_
+      attr: a
+    - name: .ctors
+      balign: 0
+    - name: .dtors
+      balign: 0
+    - name: .rodata
+    - name: .data
+    - name: .sdata
+    - name: .sdata2
+  bss:
+    - name: .bss
+    - name: .sbss
+    
