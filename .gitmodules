@@ -1,0 +1,6 @@
+[submodule "tools/splat"]
+	path = tools/splat
+	url = git@github.com:ethteck/splat.git
+[submodule "tools/ppcdis"]
+	path = tools/ppcdis
+	url = git@github.com:SeekyCt/ppcdis.git
