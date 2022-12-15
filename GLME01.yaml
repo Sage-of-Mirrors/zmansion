@@ -1,0 +1,40 @@
+name: "Luigi'S Mansion (NTSC-U)"
+system_code: G
+game_code: LM
+region_code: E
+publisher_code: 01
+sha1: 96a7d2e6b6e0a355f6e57ef76bd37f6ee837ed25
+options:
+  filesystem_path: filesystem
+  basename: GLME01
+  target_path: orig/glme01.iso
+  base_path: .
+  compiler: mwcc
+  platform: gc
+  # undefined_funcs_auto: True
+  # undefined_funcs_auto_path: undefined_funcs_auto.txt
+  # undefined_syms_auto: True
+  # undefined_syms_auto_path: undefined_syms_auto.txt
+  # symbol_addrs_path: symbol_addrs.txt
+  # asm_path: asm
+  # src_path: src
+  # build_path: build
+  # extensions_path: tools/splat_ext
+  # section_order: [".text", ".data", ".rodata", ".bss"]
+  # auto_all_sections: [".data", ".rodata", ".bss"]
+segments:
+  - name: filesystem
+    type: fst
+    path: filesystem/sys/fst.bin
+  - name: bootinfo
+    type: bootinfo
+    path: filesystem/sys/boot.bin
+  - name: bi2
+    type: bi2
+    path: filesystem/sys/bi2.bin
+  - name: apploader
+    type: apploader
+    path: filesystem/sys/apploader.img
+  - name: main
+    type: dol
+    path: filesystem/sys/main.dol
