@@ -1,0 +1,25 @@
+global:
+    0x8035a550: __vt__22EnemyStrategyDecorator
+    0x8035a574: __vt__13EnemyStrategy
+    0x804d2e60: __RTTI__13JORReflexible
+    0x804d2e68: __RTTI__13EnemyStrategy
+    0x804d2e70: __RTTI__22EnemyStrategyDecorator
+    
+    0x800c2238: __ct__13EnemyStrategyFv
+    0x800c2260: __dt__13EnemyStrategyFv
+    0x800c22ac: init__13EnemyStrategyFv
+    0x800c22b0: update__13EnemyStrategyFv
+    0x800c230c: doBehavior__13EnemyStrategyFv
+    0x800c2310: doBehaviorInit__13EnemyStrategyFv
+    0x800c2314: FUN_800c1314__13EnemyStrategyFv
+    0x800c231c: FUN_800c231c__13EnemyStrategyFv
+    0x800c2320: setNextState__13EnemyStrategyFs
+    0x800c2328: changeState__13EnemyStrategyFv
+    
+    0x800c2370: __nw__FUlPv
+    0x800c2378: __dl__FPv
+    
+    0x800c237c: __ct__22EnemyStrategyDecoratorFv
+    0x8006b02c: __dt__22EnemyStrategyDecoratorFv
+    0x800c23bc: trySetTsuriStrategy__22EnemyStrategyDecoratorFP13EnemyStrategy
+    0x800c23dc: update__22EnemyStrategyDecoratorFv
