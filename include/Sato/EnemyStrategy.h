@@ -23,8 +23,8 @@ public:
   void changeState();
   void setNextState(short nextState);
   
-  static void* operator new(size_t size, void* mem) { return mem; }
-  static void operator delete(void* mem) { }
+  static void* operator new(size_t size, void* mem);
+  static void operator delete(void* mem);
   
   void* mpEnZako;
   void* mpUserData;
@@ -40,7 +40,6 @@ class EnemyStrategyDecorator : public EnemyStrategy
   
 public:
   EnemyStrategyDecorator();
-  virtual ~EnemyStrategyDecorator();
   
   virtual void update();
   

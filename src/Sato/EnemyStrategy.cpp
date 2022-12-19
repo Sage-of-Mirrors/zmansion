@@ -66,6 +66,16 @@ void EnemyStrategy::changeState()
   doBehaviorInit();
 }
 
+void* EnemyStrategy::operator new(size_t size, void* mem)
+{
+  return mem;
+}
+
+void EnemyStrategy::operator delete(void* mem)
+{
+    
+}
+
 /* ===== EnemyStrategyDecorator ===== */
 
 EnemyStrategyDecorator::EnemyStrategyDecorator()
@@ -78,11 +88,6 @@ EnemyStrategyDecorator::EnemyStrategyDecorator()
   
   mpTsuriStrategy = 0;
   mTsuriState = 0x100;
-}
-
-EnemyStrategyDecorator::~EnemyStrategyDecorator()
-{
-  
 }
   
 void EnemyStrategyDecorator::update()
