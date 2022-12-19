@@ -1,0 +1,3 @@
+config/dol.yml:
+    staticdata_usa.arc:
+        addrs: [0x8021e000, 0x802FB380]

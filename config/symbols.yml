@@ -20,6 +20,6 @@ global:
     0x800c2378: __dl__13EnemyStrategyFPv
     
     0x800c237c: __ct__22EnemyStrategyDecoratorFv
-    0x8006b02c: __dt__22EnemyStrategyDecoratorFv
+    # 0x8006b02c: __dt__22EnemyStrategyDecoratorFv
     0x800c23bc: trySetTsuriStrategy__22EnemyStrategyDecoratorFP13EnemyStrategy
     0x800c23dc: update__22EnemyStrategyDecoratorFv
