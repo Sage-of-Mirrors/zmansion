@@ -23,7 +23,7 @@ void EnemyStrategy::init()
 
 void EnemyStrategy::update()
 {
-  if (mNextState != -1)
+  if (mNextState != 0xFFFF)
   {
     changeState();
   }
@@ -60,7 +60,7 @@ void EnemyStrategy::setNextState(short nextState)
 void EnemyStrategy::changeState()
 {
   mCurrentState = mNextState;
-  mNextState = -1;
+  mNextState = 0xFFFF;
   mTimer = 0;
   
   doBehaviorInit();
@@ -80,44 +80,10 @@ void EnemyStrategy::operator delete(void* mem)
 
 EnemyStrategyDecorator::EnemyStrategyDecorator()
 {
-  mpEnZako = 0;
-  mpUserData = 0;
-  mNextState = 0;
-  mCurrentState = 0;
-  mTimer = 0;
-  
   mpTsuriStrategy = 0;
   mTsuriState = 0x100;
 }
-  
-void EnemyStrategyDecorator::update()
-{
-  if (mpTsuriStrategy == 0)
-  {
-    if (mNextState != -1)
-    {
-      mCurrentState = mNextState;
-      mNextState = -1;
-      mTimer = 0;
-      doBehaviorInit();
-    }
-    
-    doBehavior();
-    mTimer++;
-  }
-  else
-  {
-    mpTsuriStrategy->update();
-    
-    unsigned short tsuriState = mpTsuriStrategy->mCurrentState;
-    if (tsuriState > 0xFF && tsuriState < 0x103)
-    {
-      mTsuriState = tsuriState;
-      mpTsuriStrategy = 0;
-    }
-  }
-}
-  
+
 bool EnemyStrategyDecorator::trySetTsuriStrategy(EnemyStrategy* tsuriStrategy)
 {
   if (mpTsuriStrategy != 0)
@@ -127,4 +93,28 @@ bool EnemyStrategyDecorator::trySetTsuriStrategy(EnemyStrategy* tsuriStrategy)
   
   mpTsuriStrategy = tsuriStrategy;
   return true;
+}
+
+void EnemyStrategyDecorator::update()
+{
+  long padding[4];
+    
+  if (mpTsuriStrategy == 0)
+  {
+      EnemyStrategy::update();
+  }
+  else
+  {
+    mpTsuriStrategy->update();
+
+    switch(mpTsuriStrategy->mCurrentState)
+    {
+        case 0x100:
+        case 0x101:
+        case 0x102:
+            mTsuriState = mpTsuriStrategy->mCurrentState;
+            mpTsuriStrategy = 0;
+            break;       
+    }
+  }
 }

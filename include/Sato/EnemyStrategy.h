@@ -28,20 +28,20 @@ public:
   
   void* mpEnZako;
   void* mpUserData;
-  short mNextState;
-  short mCurrentState;
+  unsigned short mNextState;
+  unsigned short mCurrentState;
   unsigned int mTimer;
 };
 
 class EnemyStrategyDecorator : public EnemyStrategy
 {
-  EnemyStrategy* mpTsuriStrategy;
-  unsigned short mTsuriState;
-  
 public:
   EnemyStrategyDecorator();
   
   virtual void update();
   
   bool trySetTsuriStrategy(EnemyStrategy* tsuriStrategy);
+  
+  EnemyStrategy* mpTsuriStrategy;
+  unsigned short mTsuriState;
 };
