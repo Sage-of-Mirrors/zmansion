@@ -1,4 +1,4 @@
 Sato/EnemyStrategy.cpp:
     .text: [0x800c2238, 0x800c24a4]
-    .data: [0x8035a4f8, 0x8035a5b0]
+    .data: [0x8035a4f8, 0x8035a598]
     .sdata: [0x804d2e60, 0x804d2e78]

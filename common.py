@@ -282,7 +282,7 @@ CFLAGS = [
     "-Cpp_exceptions off",
     "-O4,p",
     "-fp hard",
-    "-inline auto",
+    "-inline auto, deferred",
     "-enum int",
     "-str reuse",
 ]
