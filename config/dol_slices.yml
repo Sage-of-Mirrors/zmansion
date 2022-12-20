@@ -2,3 +2,10 @@ Sato/EnemyStrategy.cpp:
     .text: [0x800c2238, 0x800c24a4]
     .data: [0x8035a4f8, 0x8035a598]
     .sdata: [0x804d2e60, 0x804d2e78]
+Koga/CharacterEvent.cpp:
+    .text: [0x800ea1b4, 0x800ea1dc]
+    #.sdata: [0x804d632c, 0x804d6334]
+Koga/CharacterEventObserver.cpp:
+    .text: [0x800ea1dc, 0x800ea454]
+    .data: [0x80363fb8, 0x803640d4]
+    .sdata: [0x804d3f68, 0x804d3f78]

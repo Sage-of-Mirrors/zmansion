@@ -153,7 +153,7 @@ def load_from_yaml(path: str, default=None):
 DOL_SRCDIR = "src"
 
 # Include directory
-INCDIR = "include/Sato"
+INCDIR = "include"
 
 # Build artifacts directory
 BUILDDIR = "build"

@@ -33,7 +33,7 @@ assert os.path.exists(c.DOL), \
 
 # Check binaries are correct
 dol_hash = c.get_file_sha1(c.DOL)
-assert dol_hash == bytes.fromhex("4ef81f968d0753a96d7acb8416f92f75f3701fb7"), \
+assert dol_hash == bytes.fromhex("77D49225E7D28B9777916CDBE5809345C570ECBC"), \
        "Error: Base dol hash isn't correct."
 
 # Check submodules added

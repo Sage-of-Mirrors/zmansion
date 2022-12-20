@@ -20,6 +20,37 @@ global:
     0x800c2378: __dl__13EnemyStrategyFPv
     
     0x800c237c: __ct__22EnemyStrategyDecoratorFv
-    # 0x8006b02c: __dt__22EnemyStrategyDecoratorFv
+    0x8006b02c: __dt__22EnemyStrategyDecoratorFv
     0x800c23bc: trySetTsuriStrategy__22EnemyStrategyDecoratorFP13EnemyStrategy
     0x800c23dc: update__22EnemyStrategyDecoratorFv
+    
+    #0x804d632c: __RTTI__Q24Koga14CharacterEvent
+    0x800ea1b4: __ct__Q24Koga14CharacterEventFRCi
+    
+    #0x8034b8ec: __vt__Q24Koga8Observer<Q24Koga14CharacterEvent,b>
+    #0x804d1d3c: __RTTI__Q24Koga8Observer<Q24Koga14CharacterEvent,b>
+    
+    0x80364088: __vt__Q24Koga22CharacterEventObserver
+    0x804d3f70: __RTTI__Q24Koga22CharacterEventObserver
+    
+    0x800ea1dc: receiveMessage__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea368: onEnteredFlashlightBeam__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea370: onCaptureBegin__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea378: onCaptureEnd__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea380: FUN_800ea380__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea388: onCollideWithPlayer__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    
+    0x800ea390: onSprayedWithFire__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea398: onSprayedWithIce__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea3a0: onSprayedWithWater__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    
+    0x800ea3a8: onHitWithFireBall__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea3d4: onHitWithIceBall__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea400: onHitWithWaterBall__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    
+    0x800ea42c: onFishingBegin__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea434: onPlayerLeftRoom__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea43c: onPlayerEnteredRoom__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea444: onPlayerTapped__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    0x800ea44c: FUN_800ea44c__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
+    

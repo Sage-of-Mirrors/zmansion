@@ -16,7 +16,9 @@ section_defs:
       balign: 0
     - name: .rodata
     - name: .data
+      balign: 0
     - name: .sdata
+      balign: 0
     - name: .sdata2
   bss:
     - name: .bss
