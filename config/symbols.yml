@@ -54,3 +54,23 @@ global:
     0x800ea444: onPlayerTapped__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
     0x800ea44c: FUN_800ea44c__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
     
+    # SDK Symbols
+    # VI
+    0x801e6ee8: __VIRetraceHandler
+    0x801e70f8: VISetPreRetraceCallback
+    0x801e713c: getTiming
+    0x801e71a4: __VIInit
+    0x801e738c: VIInit
+    0x801e77c0: VIWaitForRetrace
+    0x801e7814: setFbbRegs
+    0x801e7ae8: setVerticalRegs
+    0x801e7c88: VIConfigure
+    0x801e8338: VIFlush
+    0x801e843c: VISetNextFrameBuffer
+    0x801e84a8: VISetBlack
+    0x801e8524: VIGetRetraceCount
+    0x801e852c: getCurrentFieldEvenOdd
+    0x801e85e8: VIGetNextField
+    0x801e86dc: VIGetScanMode
+    0x801e86e8: VIGetDTVStatus
+    
