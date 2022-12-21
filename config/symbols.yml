@@ -1,4 +1,8 @@
 global:
+    0x80005bdc: main
+    0x80005760: gameInit
+    0x8000b7f4: gameRun
+    
     0x8035a550: __vt__22EnemyStrategyDecorator
     0x8035a574: __vt__13EnemyStrategy
     0x804d2e60: __RTTI__13JORReflexible
@@ -55,6 +59,46 @@ global:
     0x800ea44c: FUN_800ea44c__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
     
     # SDK Symbols
+    # EXI
+    0x801dc48c: SetExiInterruptMask
+    0x801dc580: EXIImm
+    0x801dc7dc: EXIImmEx
+    0x801dc87c: EXIDma
+    0x801dc968: EXISync
+    0x801dcb70: EXIClearInterrupts
+    0x801dcbb8: EXISetExiCallback
+    0x801dcc34: __EXIProbe
+    0x801dcd9c: EXIProbe
+    0x801dcdfc: EXIAttach
+    0x801dcee0: EXIDetach
+    0x801dcf9c: EXISelect
+    0x801dd0c8: EXIDeselect
+    0x801dd1d8: EXIIntrruptHandler
+    0x801dd258: TCIntrruptHandler
+    0x801dd44c: EXTIntrruptHandler
+    0x801dd4f8: EXIInit
+    0x801dd5fc: EXILock
+    0x801dd6f0: EXIUnlock
+    0x801dd7cc: EXIGetState
+    0x801dd7e4: EXIGetID
+    
+    # OS
+    
+    # SI
+    0x801df87c: SIBusy
+    0x801df89c: CompleteTransfer
+    0x801dfae0: SIInterruptHandler
+    0x801dfc6c: __SITransfer
+    0x801dfe74: SIGetStatus
+    0x801dfe84: SISetCommand
+    0x801dfe98: SITransferCommands
+    0x801dfea8: SISetXY
+    0x801dff08: SIEnablePolling
+    0x801dffa4: SIDisablePolling
+    0x801e0010: SIGetResponse
+    0x801e0034: AlarmHandler_si
+    0x801e00c0: SITransfer
+    
     # DVD
     0x801e2a08: __DVDInitWA
     0x801e2a48: __DVDInterruptHandler
@@ -161,4 +205,32 @@ global:
     0x801e85e8: VIGetNextField
     0x801e86dc: VIGetScanMode
     0x801e86e8: VIGetDTVStatus
+    
+    # PAD
+    0x801e8724: ClampStick
+    0x801e8854: PADClamp
+    0x801e895c: DoReset
+    0x801e8a30: PADProbeCallback
+    0x801e8c0c: UpdateOrigin
+    0x801e8da0: PADOriginCallback
+    0x801e8ebc: PADOriginUpdateCallback
+    0x801e8ef8: PADFixCallback
+    0x801e914c: PADResetCallback
+    0x801e987c: PADReset
+    0x801e99e8: PADRecalibrate
+    0x801e9b3c: PADInit
+    0x801e9d00: PADReceiveCheckCallback
+    0x801e9e5c: PADRead
+    0x801ea194: PADSetSamplingRate
+    0x801ea244: PADControlMotor
+    0x801ea300: PADSetSpec
+    0x801ea360: SPEC0_MakeStatus
+    0x801ea4d4: SPEC1_MakeStatus
+    0x801ea648: SPEC2_MakeStatus
+    0x801eaa40: PADSetAnalogMode
+    0x801eaab8: OnReset
+    
+    # AI (Incomplete!)
+    0x801eabd4: AIRegisterDMACallback
+    
     
