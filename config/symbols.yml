@@ -59,6 +59,66 @@ global:
     0x800ea44c: FUN_800ea44c__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
     
     # SDK Symbols
+    # Base
+    0x801d9f7c: PPCMfmsr
+    0x801d9f84: PPCMtmsr
+    0x801d9f8c: PPCMfhid0
+    0x801d9f94: PPCMfl2cr
+    0x801d9f9c: PPCMtl2cr
+    0x801d9fa4: PPCMtdec
+    0x801d9fac: PPCSync
+    0x801d9fb4: PPCHalt
+    0x801d9fc8: PPCMfhid2
+    0x801d9fd0: PPCMthid2
+    0x801d9fd8: PPCMtwpar
+    
+    # OS
+    # Before EXI
+    
+    # After EXI
+    0x801ddab8: OSGetFontEncode
+    0x801ddb10: OSDisableInterrupts
+    0x801ddb24: OSEnableInterrupts
+    0x801ddb38: OSRestoreInterrupts
+    0x801ddb5c: __OSSetInterruptHandler
+    0x801ddb78: __GetInterruptHandler
+    0x801ddb8c: __OSInterruptInit
+    0x801ddc00: SetInterruptMask
+    0x801ddeb0: __OSMaskInterrupts
+    0x801ddf38: __OSUnmaskInterrupts
+    0x801ddfc0: __OSDispatchInterrupt
+    0x801de2e4: ExternalInterruptHandler
+    0x801de330: __OSModuleInit
+    0x801de348: OSInitMessageQueue
+    0x801de3a8: OSSendMessage
+    0x801de470: OSReceiveMessage
+    0x801de54c: OSInitMutex
+    0x801de584: OSLockMutex
+    0x801de660: OSUnlockMutex
+    0x801de728: __OSUnlockAllMutex
+    0x801de798: Run
+    0x801de7d8: Callback_os
+    0x801de7e4: __OSReboot
+    0x801de994: OSRegisterResetFunction
+    0x801dea18: Reset
+    0x801dea88: __OSDoHotReset
+    0x801dead0: OSResetSystem
+    0x801dec88: __OSResetSWInterruptHandler
+    0x801ded7c: OSGetResetButtonState
+    0x801def70: WriteSramCallback
+    0x801defd0: WriteSram
+    0x801df0e8: __OSInitSram
+    0x801df21c: __OSLockSram
+    0x801df278: __OSLockSramEx
+    0x801df2d4: UnlockSram
+    0x801df5dc: __OSUnlockSram
+    0x801df600: __OSUnlockSramEx
+    0x801df624: __OSSyncSram
+    0x801df634: OSGetSoundMode
+    0x801df6b4: OSSetSoundMode
+    0x801df758: OSGetProgressiveMode
+    0x801df7d8: OSSetProgressiveMode
+    
     # EXI
     0x801dc48c: SetExiInterruptMask
     0x801dc580: EXIImm
@@ -68,6 +128,7 @@ global:
     0x801dcb70: EXIClearInterrupts
     0x801dcbb8: EXISetExiCallback
     0x801dcc34: __EXIProbe
+    0x801ef56c: EXIProbe # Located inside CARD
     0x801dcd9c: EXIProbeEx
     0x801dcdfc: EXIAttach
     0x801dcee0: EXIDetach
@@ -81,8 +142,6 @@ global:
     0x801dd6f0: EXIUnlock
     0x801dd7cc: EXIGetState
     0x801dd7e4: EXIGetID
-    
-    # OS
     
     # SI
     0x801df87c: SIBusy
@@ -268,6 +327,7 @@ global:
     0x801ec8f8: ARQPostRequest
     
     # DSP
+    0x801eca54: DSPCheckMailToDSP
     0x801eca64: DSPCheckMailFromDSP
     0x801eca74: DSPReadMailFromDSP
     0x801eca8c: DSPSendMailToDSP
@@ -317,7 +377,6 @@ global:
     0x801eeefc: __CARDVerify
     0x801eef88: CARDCheckExAsync
     0x801ef518: CARDCheck
-    0x801ef56c: EXIProbe
     0x801ef58c: CARDProbeEx
     0x801ef6f0: DoMount
     0x801efaa8: __CARDMountCallback
