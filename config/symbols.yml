@@ -68,7 +68,7 @@ global:
     0x801dcb70: EXIClearInterrupts
     0x801dcbb8: EXISetExiCallback
     0x801dcc34: __EXIProbe
-    0x801dcd9c: EXIProbe
+    0x801dcd9c: EXIProbeEx
     0x801dcdfc: EXIAttach
     0x801dcee0: EXIDetach
     0x801dcf9c: EXISelect
@@ -228,7 +228,7 @@ global:
     0x801ea4d4: SPEC1_MakeStatus
     0x801ea648: SPEC2_MakeStatus
     0x801eaa40: PADSetAnalogMode
-    0x801eaab8: OnReset
+    0x801eaab8: OnReset_pad
     
     # AI
     0x801eabd4: AIRegisterDMACallback
@@ -267,5 +267,86 @@ global:
     0x801ec890: ARQInit
     0x801ec8f8: ARQPostRequest
     
+    # DSP
+    0x801eca64: DSPCheckMailFromDSP
+    0x801eca74: DSPReadMailFromDSP
+    0x801eca8c: DSPSendMailToDSP
+    
+    # CARD
+    0x801ecaa0: __CARDDefaultApiCallback
+    0x801ecaa4: __CARDSyncCallback
+    0x801ecad8: __CARDExtHandler
+    0x801ecba4: __CARDExiHandler
+    0x801eccbc: __CARDTxHandler
+    0x801ecd64: __CARDUnlockedHandler
+    0x801ecde8: __CARDReadNintendoID
+    0x801ecef4: __CARDEnableInterrupt
+    0x801ecfb4: __CARDReadStatus
+    0x801ed0a4: __CARDClearStatus
+    0x801ed150: TimeoutHandler
+    0x801ed1f4: Retry
+    0x801ed420: UnlockedCallback
+    0x801ed530: __CARDStart
+    0x801ed6d0: __CARDReadSegment
+    0x801ed808: __CARDWritePage
+    0x801ed928: __CARDEraseSector
+    0x801eda04: CARDInit
+    0x801eda94: __CARDSetDiskID
+    0x801edab0: __CARDGetControlBlock
+    0x801edb60: __CARDPutControlBlock
+    0x801edbb0: CARDFreeBlocks
+    0x801edcd0: __CARDSync
+    0x801edd68: OnReset_card
+    0x801eddb8: BlockReadCallback
+    0x801ede94: __CARDRead
+    0x801edef8: BlockWriteCallback
+    0x801edfd4: __CARDWrite
+    0x801ee038: __CARDGetFatBlock
+    0x801ee040: WriteCallback_fat
+    0x801ee114: EraseCallback_fat
+    0x801ee1dc: __CARDAllocBlock
+    0x801ee2f4: __CARDUpdateFatBlock
+    0x801ee3a0: __CARDGetDirBlock
+    0x801ee3a8: WriteCallback_dir
+    0x801ee478: EraseCallback_dir
+    0x801ee540: __CARDUpdateDir
+    0x801ee604: __CARDCheckSum
+    0x801ee7b4: VerifyID
+    0x801eea38: VerifyDir
+    0x801eec78: VerifyFAT
+    0x801eeefc: __CARDVerify
+    0x801eef88: CARDCheckExAsync
+    0x801ef518: CARDCheck
+    0x801ef56c: EXIProbe
+    0x801ef58c: CARDProbeEx
+    0x801ef6f0: DoMount
+    0x801efaa8: __CARDMountCallback
+    0x801efbb0: CARDMountAsync
+    0x801efd38: CARDMount
+    0x801efd80: DoUnmount
+    0x801efe1c: CARDUnmount
+    0x801efec8: FormatCallback
+    0x801f000c: __CARDFormatRegionAsync
+    0x801f0664: CARDFormat
+    0x801f06ac: __CARDCompareFileName
+    0x801f0714: __CARDAccess
+    0x801f07a0: __CARDIsPublic
+    0x801f07d0: CARDOpen
+    0x801f0944: CARDClose
+    0x801f0998: CreateCallbackFat
+    0x801f0ac8: CARDCreateAsync
+    0x801f0ce0: CARDCreate
+    0x801f0d28: __CARDSeek
+    0x801f0ee0: ReadCallback
+    0x801f1010: CARDReadAsync
+    0x801f1154: CARDRead
+    0x801f119c: WriteCallback_3
+    0x801f130c: EraseCallback_3
+    0x801f13bc: CARDWriteAsync
+    0x801f14cc: CARDWrite
+    0x801f1514: UpdateIconOffsets
+    0x801f170c: CARDGetStatus
+    0x801f1834: CARDSetStatusAsync
+    0x801f19a4: CARDSetStatus
     
     
