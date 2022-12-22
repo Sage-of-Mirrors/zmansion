@@ -230,7 +230,42 @@ global:
     0x801eaa40: PADSetAnalogMode
     0x801eaab8: OnReset
     
-    # AI (Incomplete!)
+    # AI
     0x801eabd4: AIRegisterDMACallback
+    0x801eac18: AIInitDMA
+    0x801eaca0: AIStartDMA
+    0x801eacb8: AIGetStreamSampleCount
+    0x801eacc8: AIResetStreamSampleCount
+    0x801eace0: AIGetStreamTrigger
+    0x801eacf0: AISetStreamPlayState
+    0x801eadc8: AIGetStreamPlayState
+    0x801eadd8: AISetDSPSampleRate
+    0x801eaeb8: AIGetDSPSampleRate
+    0x801eaecc: AISetStreamSampleRate
+    0x801eaef4: __AI_set_stream_sample_rate
+    0x801eafc8: AIGetStreamSampleRate
+    0x801eafd8: AISetStreamVolLeft
+    0x801eaff4: AIGetStreamVolLeft
+    0x801eb004: AISetStreamVolRight
+    0x801eb020: AIGetStreamVolRight
+    0x801eb030: AIInit
+    0x801eb2a0: __AICallbackStackSwitch
+    0x801eb2f8: __AI_SRC_INIT
+    
+    # AR
+    0x801eb4dc: ARRegisterDMACallback
+    0x801eb520: ARStartDMA
+    0x801eb610: ARAlloc
+    0x801eb678: ARInit
+    0x801eb76c: ARGetBaseAddress
+    0x801eb774: ARGetSize
+    0x801eb77c: __ARHandler
+    0x801eb7f4: __ARChecksize
+    0x801ec6c0: __ARQServiceQueueLo
+    0x801ec7c0: __ARQCallbackHack
+    0x801ec7c4: __ARQInterruptServiceRoutine
+    0x801ec890: ARQInit
+    0x801ec8f8: ARQPostRequest
+    
     
     
