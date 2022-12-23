@@ -74,6 +74,75 @@ global:
     
     # OS
     # Before EXI
+    0x801d9fe0: OSGetConsoleType
+    0x801da008: OSInit
+    0x801da2e4: OSExceptionInit
+    0x801da564: __OSDBINTSTAR
+    0x801da588: __OSDBJump
+    0x801da58c: __OSSetExceptionHandler
+    0x801da5a8: __OSGetExceptionHandler
+    
+    # OSExceptionVector
+    0x801da5bc: __OSEVStar
+    0x801da614: __DBVECTO
+    0x801da624: __OSEVSetNumbe
+    0x801da654: __OSEVEn
+    
+    0x801da658: OSDefaultExceptionHandler
+    0x801da6ac: __OSPSInit
+    0x801da6e4: __OSGetDIConfig
+    0x801da6f8: OSInitAlarm
+    0x801da744: OSCreateAlarm
+    0x801da750: InsertAlarm
+    0x801da9a0: OSSetAlarm
+    0x801daa08: OSSetPeriodicAlarm
+    0x801daa6c: OSCancelAlarm
+    0x801dab88: DecrementerExceptionCallback
+    0x801dad98: DecrementerExceptionHandler
+    0x801dade4: OSAllocFromHeap
+    0x801daee0: OSInitAlloc
+    0x801daf50: OSGetArenaHi
+    0x801daf60: OSGetArenaLo
+    0x801daf60: OSSetArenaHi
+    0x801daf68: OSSetArenaLo
+    0x801daf70: __OSInitAudioSystem
+    0x801db104: __OSStopAudioSystem
+    0x801db1dc: DCEnable
+    0x801db1f0: DCInvalidateRange
+    0x801db220: DCFlushRange
+    0x801db254: DCStoreRange
+    0x801db288: DCFlushRangeNoSync
+    0x801db2b8: DCZeroRange
+    0x801db2e8: ICInvalidateRange
+    0x801db320: ICFlashInvalidate
+    0x801db330: ICEnable
+    0x801db344: __LCEnable
+    0x801db410: LCEnable
+    0x801db448: LCDisable
+    0x801db470: FUN_801db470 # Duplicate of LCStoreBlocks?
+    0x801db494: LCStoreBlocks
+    0x801db4b8: LCQueueWait
+    0x801db4d0: L2GlobalInvalidate
+    0x801db568: DMAErrorHandler
+    0x801db6c8: __OSCacheInit
+    0x801db7bc: __OSLoadFPUContext
+    0x801db8e0: __OSSaveFPUContext
+    0x801dba08: OSSetCurrentContext
+    0x801dba64: OSGetCurrentContext
+    0x801dba70: OSSaveContext
+    0x801dbaf0: OSLoadContext
+    0x801dbbc8: OSGetStackPointer
+    0x801dbbd0: OSClearContext
+    0x801dbbf4: OSInitContext
+    0x801dbcb0: OSDumpContext
+    0x801dbf58: OSSwitchFPUContext
+    0x801dbfdc: __OSContextInit
+    0x801dc024: OSFillFPUContext
+    0x801dc150: OSReport
+    0x801dc1d0: OSReport_FatalError
+    0x801dc2fc: OSSetErrorHandler # ?
+    0x801dc318: __OSUnhandledException
+    
     
     # After EXI
     0x801ddab8: OSGetFontEncode
