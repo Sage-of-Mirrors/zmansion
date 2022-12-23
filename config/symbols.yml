@@ -274,6 +274,37 @@ global:
     0x801e0034: AlarmHandler_si
     0x801e00c0: SITransfer
     
+    # MTX
+    0x801e1ba0: PSMTXIdentity
+    0x801e1bcc: PSMTXCopy
+    0x801e1c00: PSMTXConcat
+    0x801e1ccc: PSMTXTranspose
+    0x801e1d1c: PSMTXInverse
+    0x801e1e20: C_MTXRotRad
+    0x801e1e90: C_MTXRotTrig
+    0x801e1f94: C_MTXRotAxisRad
+    0x801e20ac: C_MTXTrans
+    0x801e20e8: C_MTXScale
+    0x801e2120: C_MTXLookAt
+    0x801e22ac: C_MTXLightPerspective
+    0x801e2378: C_MTXLightOrtho
+    0x801e2400: C_MTXFrustum
+    0x801e249c: C_MTXPerspective
+    0x801e256c: C_MTXOrtho
+    0x801e2604: PSVECAdd
+    0x801e2628: PSVECSubtract
+    0x801e264c: PSVECScale
+    0x801e266c: PSVECNormalize
+    0x801e26b4: PSVECSquareMag
+    0x801e26d0: C_VECMag
+    0x801e2758: PSVECDotProduct
+    0x801e2778: PSVECCrossProduct
+    0x801e27b4: C_VECReflect
+    0x801e2888: PSVECSquareDistance
+    0x801e28b0: c_VECDistance
+    0x801e2938: PSMTXMultVec
+    0x801e298c: C_MTXMultVecSR
+    
     # DVD
     0x801e2a08: __DVDInitWA
     0x801e2a48: __DVDInterruptHandler
