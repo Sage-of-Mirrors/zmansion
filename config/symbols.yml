@@ -139,10 +139,9 @@ global:
     0x801dbfdc: __OSContextInit
     0x801dc024: OSFillFPUContext
     0x801dc150: OSReport
-    0x801dc1d0: OSReport_FatalError
+    0x801dc1d0: OSPanic
     0x801dc2fc: OSSetErrorHandler # ?
     0x801dc318: __OSUnhandledException
-    
     
     # After EXI
     0x801ddab8: OSGetFontEncode
