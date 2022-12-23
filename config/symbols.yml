@@ -102,7 +102,7 @@ global:
     0x801dade4: OSAllocFromHeap
     0x801daee0: OSInitAlloc
     0x801daf50: OSGetArenaHi
-    0x801daf60: OSGetArenaLo
+    0x801daf58: OSGetArenaLo
     0x801daf60: OSSetArenaHi
     0x801daf68: OSSetArenaLo
     0x801daf70: __OSInitAudioSystem
@@ -119,7 +119,7 @@ global:
     0x801db344: __LCEnable
     0x801db410: LCEnable
     0x801db448: LCDisable
-    0x801db470: FUN_801db470 # Duplicate of LCStoreBlocks?
+    0x801db470: LCLoadBlocks
     0x801db494: LCStoreBlocks
     0x801db4b8: LCQueueWait
     0x801db4d0: L2GlobalInvalidate
@@ -263,6 +263,7 @@ global:
     0x801df87c: SIBusy
     0x801df89c: CompleteTransfer
     0x801dfae0: SIInterruptHandler
+    0x801dfbf8: SIInit
     0x801dfc6c: __SITransfer
     0x801dfe74: SIGetStatus
     0x801dfe84: SISetCommand
@@ -455,6 +456,8 @@ global:
     0x801eb004: AISetStreamVolRight
     0x801eb020: AIGetStreamVolRight
     0x801eb030: AIInit
+    0x801eb194: __AISHandler
+    0x801eb210: __AIDHandler
     0x801eb2a0: __AICallbackStackSwitch
     0x801eb2f8: __AI_SRC_INIT
     
@@ -506,7 +509,10 @@ global:
     0x801edd68: OnReset_card
     0x8019eec0: bitrev
     0x8019ef40: ReadArrayUnlock
-    
+    0x8019f0c0: GetInitVal
+    0x8019f120: DummyLen
+    0x8019f1c0: __CARDUnlock
+    0x8019f480: DoneCallback
     0x801eddb8: BlockReadCallback
     0x801ede94: __CARDRead
     0x801edef8: BlockWriteCallback
