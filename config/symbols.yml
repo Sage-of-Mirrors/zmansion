@@ -187,6 +187,42 @@ global:
     0x801df758: OSGetProgressiveMode
     0x801df7d8: OSSetProgressiveMode
     
+    # After SI
+    0x801e01fc: __OSSystemCallVectorStar
+    0x801e0218: __OSSystemCallVectorEn
+    0x801e021c: __OSInitSystemCall
+    0x801e0280: __OSThreadInit
+    0x801e03a8: OSInitThreadQueue
+    0x801e03b8: OSGetCurrentThread
+    0x801e03c4: OSIsThreadTerminated
+    0x801e03f8: OSDisableScheduler
+    0x801e0438: OSEnableScheduler
+    0x801e0478: UnsetRun
+    0x801e04e0: __OSGetEffectivePriority
+    0x801e051c: SetEffectivePriority
+    0x801e06dc: __OSPromoteThread
+    0x801e072c: SelectThread
+    0x801e092c: __OSReschedule
+    0x801e095c: OSCreateThread
+    0x801e0a7c: OSExitThread
+    0x801e0b60: OSCancelThread
+    0x801e0d1c: OSDetachThread
+    0x801e0dbc: OSResumeThread
+    0x801e1044: OSSuspendThread
+    0x801e11b4: OSSleepThread
+    0x801e12a0: OSWakeupThread
+    0x801e13a4: OSGetThreadPriority
+    0x801e13ac: OSGetTime
+    0x801e13c4: OSGetTick
+    0x801e13cc: __OSGetSystemTime
+    0x801e1430: GetDates
+    0x801e15cc: OSTicksToCalendarTime
+    
+    # After EXI UART
+    0x801e1a20: __init_user
+    0x801e1a40: __init_cpp
+    0x801e1a94: _ExitProcess
+    
     # EXI
     0x801dc48c: SetExiInterruptMask
     0x801dc580: EXIImm
@@ -210,6 +246,18 @@ global:
     0x801dd6f0: EXIUnlock
     0x801dd7cc: EXIGetState
     0x801dd7e4: EXIGetID
+    
+    # DB
+    0x801e1ab4: DBInit
+    0x801e1adc: __DBExceptionDestinationAux
+    0x801e1b24: __DBExceptionDestination
+    0x801e1b34: __DBIsExceptionMarked
+    0x801e1b50: DBPrintf
+    
+    # EXI UART
+    0x801e17d0: InitializeUART
+    0x801e1818: ReadUARTN
+    0x801e1820: WriteUARTN
     
     # SI
     0x801df87c: SIBusy
@@ -425,6 +473,9 @@ global:
     0x801edbb0: CARDFreeBlocks
     0x801edcd0: __CARDSync
     0x801edd68: OnReset_card
+    0x8019eec0: bitrev
+    0x8019ef40: ReadArrayUnlock
+    
     0x801eddb8: BlockReadCallback
     0x801ede94: __CARDRead
     0x801edef8: BlockWriteCallback
