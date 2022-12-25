@@ -565,7 +565,8 @@ global:
     0x801f19a4: CARDSetStatus
     
     # GX
-    0x801f19ec: __GXGetTexObjFmt
+    0x801f19ec: __GXDefaultTexRegionCallback
+    0x801f1a68: __GXDefaultTlutRegionCallback
     0x801f1a8c: GXInit
     0x801f29cc: GXCPInterruptHandler
     0x801f2b08: GXInitFifoBase
@@ -581,7 +582,7 @@ global:
     0x801f3004: __GXFifoLink
     0x801f3048: __GXWriteFifoIntEnable
     0x801f3094: __GXWriteFifoIntReset
-    0x801f30e0: FUN_801f30e0 # ?
+    0x801f30e0: GXGetCPUFifo
     0x801f30e8: __GXXfVtxSpecs
     0x801f3240: GXSetVtxDesc
     0x801f3578: GXSetVtxDescv
@@ -690,7 +691,7 @@ global:
     0x801f8310: GXSetTevOrder
     0x801f84b0: GXSetNumTevStages
     0x801f84e4: GXSetFog
-    0x801f8698: FUN_801f8698 # ?
+    0x801f8698: GXInitFogAdjTable
     0x801f8860: GXSetFogRangeAdj
     0x801f8960: GXSetBlendMode
     0x801f8a64: GXSetColorUpdate
@@ -702,11 +703,11 @@ global:
     0x801f8cec: GXSetDstAlpha
     0x801f8d40: GXSetFieldMask
     0x801f8d78: GXSetFieldMode
-    0x801f8df8: FUN_801f8df8 # ?
-    0x801f91ac: FUN_801f91ac # ?
-    0x801f9878: FUN_801f9878 # ?
-    0x801f9a90: FUN_801f9a90 # ?
-    0x801f9ce0: FUN_801f9ce0 # ?
+    0x801f8df8: Subdivide
+    0x801f91ac: GXDrawCylinder
+    0x801f9878: GXDrawCubeFace
+    0x801f9a90: GXDrawCube
+    0x801f9ce0: GXDrawSphere1
     0x801f9df4: __GXSetRange
     0x801f9df8: GXBeginDisplayList
     0x801f9ec0: GXEndDisplayList
@@ -726,4 +727,30 @@ global:
     0x801fa4fc: GXSetScissorBoxOffset
     0x801fa540: GXSetClipMode
     0x801fa568: __GXSetMatrixIndex
+    
+    # hvqm4dec
+    0x801fa5ec: init_global_constants
+    0x801fa94c: setHVQPlaneDesc
+    0x801faa68: readTree
+    0x801fad34: getByte
+    0x801fad98: Ipic_BasisNumDec
+    0x801fb05c: IpicDcvDec
+    0x801fb198: getDeltaDC
+    0x801fb1d8: reset_PB_dc
+    0x801fb248: MakeNest
+    0x801fc018: IpicBlockDec
+    0x801fc15c: IpicLineDec
+    0x801fc230: IpicPlaneDec
+    0x801fc30c: initMcHandler
+    0x801fd428: setMCNextBlk
+    0x801fe830: spread_PB_descMap
+    0x801fec60: BpicPlaneDec
+    0x801ff09c: HVQM4InitDecoder
+    0x801ff0bc: HVQM4InitSeqObj
+    0x801ff0e0: HVQM4BuffSize
+    0x801ff154: HVQM4SetBuffer
+    0x801ff5b8: HVQM4DecodeIpic
+    0x801ffac8: HVQM4DecodePpic
+    0x801ffaec: HVQM4DecodeBpic
+    
     
