@@ -753,4 +753,121 @@ global:
     0x801ffac8: HVQM4DecodePpic
     0x801ffaec: HVQM4DecodeBpic
     
+    # Runtime
+    0x80200094: __va_arg
+    0x80200188: __destroy_global_chain
+    0x802001d0: __register_global_object
+    0x802001e8: __dt__Q23std9exceptionFv
+    0x80200254: what__Q23std9exceptionFPc
+    0x80200260: __destroy_new_array
+    0x802002dc: __destroy_arr
+    0x80200354: __construct_array
+    0x80200454: __dt__26__partial_array_destructorFv
+    0x8020050c: __construct_new_array
+    0x80200614: __throw_catch_compare
+    0x80200840: FUN_80200840 # ?
+    0x80200868: terminate
+    0x80200890: FUN_80200890 # ?
+    0x802008b8: FUN_802008b8 # ?
+    0x802008d8: __ptmf_scall
+    0x80200900: dynamic_cast
+    0x80200b64: __dt__Q23std8bad_castFv
+    0x80200be0: __dt__Q23std10bad_typeidFv
+    0x80200c5c: what__Q23std10bad_typeidFPc
+    0x80200c68: what__Q23std8bad_castFPc
+    0x80200c74: ExPPC_LongJmp
+    0x80200ce8: __throw
+    0x80200d9c: __end__catch
+    0x80200de0: ExPPC_ThrowHandler
+    0x80201230: FUN_80201230 # ?
+    0x802013f8: __dt__Q23std13bad_exceptionFv
+    0x8020147c: ExPPC_UnwindStack
+    0x802019f0: ExPPC_PopStackFrame
+    0x80201be0: ExPPC_NextAction
+    0x80201dfc: ExPPC_FindExceptionRecord
+    0x80201fd0: ExPPC_FindExceptionFragment
+    0x80202068: __unregister_fragment
+    0x8020209c: __register_fragment
+    0x802020d8: what__Q23std13bad_exceptionFPc
+    0x802020e4: __cvt_fp2unsigned
+    0x80202140: __save_fpr
+    0x8020218c: __restore_fpr
+    0x802021d8: __div2u
+    0x802022c4: __div2i
+    0x802023fc: __mod2u
+    0x802024e0: __mod2i
+    0x802025ec: __shl2i
+    0x80202610: __shr2u
+    0x80202634: __shr2i
+    0x8020265c: GetR2__Fv
+    0x80202664: __fini_cpp_exceptions
+    0x80202698: __init_cpp_exceptions
+    0x802026d8: abort
+    0x80202758: exit
+    0x80202864: FUN_80202864 # ?
+    0x80202898: __num2dec
+    0x80202c4c: abs
+    0x80202c5c: __flush_buffer
+    0x80202d28: __prep_buffer
+    0x80202d5c: __kill_critical_regions
+    0x80202d60: toupper
+    0x80202d88: tolower
+    0x80202db0: fwrite
+    0x8020308c: wcstombs
+    0x802030c8: memcmp
+    0x8020310c: memchr
+    0x80203138: memmove
+    0x80203214: __copy_longs_rev_unaligned
+    0x802032c4: __copy_longs_unaligned
+    0x80203388: __copy_longs_rev_aligned
+    0x80203434: __copy_longs_aligned
+    0x802034f0: __stdio_atexit
+    0x802034f4: sprintf
+    0x802035c8: snprintf
+    0x80203698: vsnprintf
+    0x80203708: printf
+    0x80203784: __StringWrite
+    0x802037f0: __FileWrite
+    0x80203848: __pformatter
+    0x80203e78: float2str
+    #0x802044b8: round_decimal
+    0x802045e4: longlong2str
+    0x802048c4: long2str
+    0x80204ae8: parse_format
+    0x80204fc0: FUN_80204fc0 # ?
+    0x80204fc8: rand
+    0x8020507c: FUN_8020507c # ?
+    0x80205130: strstr
+    0x8020519c: strrchr
+    0x802051e4: strchr
+    0x80205214: strcmp
+    0x80205338: strncat
+    0x80205384: strcat
+    0x802053b0: strncpy
+    0x802053f4: strcpy
+    0x802054a8: strlen
+    0x802054c8: strtol
+    0x8020558c: strtoul
+    0x8020567c: FUN_8020567c # ?
+    0x80205728: __strtoul
+    0x80205a70: __close_console
+    0x80205a78: __write_console
+    0x80205b10: __read_console
+    0x80205bf0: fwide
+    0x80205c70: frexp
+    0x80205d0c: fabsf__Ff
+    0x80205d14: atanf
+    0x80205f08: atan
+    0x80205f28: _inv_sqrtf
+    0x80205f98: FUN_80205f98 # ?
+    0x80205fdc: atan2f
+    0x802060b4: FUN_802060b4 # ?
+    0x8020615c: FUN_8020615c # ?
+    0x80206204: tanf
+    0x80206248: cos
+    0x80206268: sin
+    0x80206288: cosf
+    0x8020641c: sinf
+    0x802065c0: __sinit_trif_c
+    0x802065f0: powf
     
