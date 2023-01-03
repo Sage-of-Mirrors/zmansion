@@ -8,7 +8,7 @@ class EnReel
 public:
     f32 getScaleModifier();
     void setScaleModifier(f32 newScale);
-    
+
     Vec mDestPosition;
     Vec mStartPosition;
     Vec mDirectionToDestPosition;
@@ -70,10 +70,10 @@ public:
     Vec m0260;
     Vec m026C;
 
-    float m0278;
-    float m027C;
-    float m0280;
-    float m0284;
+    f32 m0278;
+    f32 m027C;
+    f32 m0280;
+    f32 m0284;
 
     bool m0288;
     bool m0289;
@@ -194,6 +194,6 @@ public:
 
     Vec m041C;
 
-    float m0428;
-    float m042C;
+    f32 m0428;
+    f32 m042C;
 };
