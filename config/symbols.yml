@@ -58,6 +58,20 @@ global:
     0x800ea444: onPlayerTapped__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
     0x800ea44c: FUN_800ea44c__Q24Koga22CharacterEventObserverFPQ24Koga14CharacterEvent
     
+    0x8035a380: __vt__15IncludeStrategy
+    0x804d2dd0: __RTTI__15IncludeStrategy
+    
+    0x800bebf4: __ct__15IncludeStrategyFv
+    0x800bec3c: __dt__15IncludeStrategyFv
+    0x800bec9c: replaceStrategy__15IncludeStrategyFl
+    0x800becf4: destroyStrategy__15IncludeStrategyFv
+    
+    0x800c2224: getInitFunc__Fl
+    0x801ce904: __dl__FPv
+    
+    0x801413e4: getScaleModifier__6EnReelFv
+    0x801413ec: setScaleModifier__6EnReelFf
+
     # SDK Symbols
     # Base
     0x801d9f7c: PPCMfmsr

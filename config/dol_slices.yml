@@ -9,3 +9,9 @@ Koga/CharacterEventObserver.cpp:
     .text: [0x800ea1dc, 0x800ea454]
     .data: [0x80363fb8, 0x803640d4]
     .sdata: [0x804d3f68, 0x804d3f78]
+#IncludeStrategy.cpp:
+#    .text: [0x800bec3c, 0x800bed48]
+#    .data: [0x8035a380, 0x8035a38c]
+#    .sdata: [0x804d2dd0, 0x804d2dd8]
+EnReel.cpp:
+    .text: [0x801413e4, 0x801413f4]
