@@ -3,6 +3,10 @@
 
 #include "types.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /** Types **/
 
 typedef struct
@@ -103,5 +107,9 @@ void C_MTXMultVecSR(Mtx mtx, Vec* src, Vec* dst);
 
 #define MTXMultVec PSMTXMultVec
 #define MTXMultVecSR C_MTXMultVecSR
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
