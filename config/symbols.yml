@@ -69,8 +69,12 @@ global:
     0x800c2224: getInitFunc__Fl
     0x801ce904: __dl__FPv
     
+    0x801412d4: calculateTransformMatrix__6EnReelFv
     0x801413e4: getScaleModifier__6EnReelFv
     0x801413ec: setScaleModifier__6EnReelFf
+
+    0x8000965c: calculateLookAtAngle__Fff
+    0x80127870: func_80127870__Ff
 
     # SDK Symbols
     # Base

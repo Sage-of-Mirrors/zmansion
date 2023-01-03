@@ -6,6 +6,8 @@
 class EnReel
 {
 public:
+    //void calculateTransformMatrix();
+
     f32 getScaleModifier();
     void setScaleModifier(f32 newScale);
 
