@@ -2631,60 +2631,60 @@ lbl_804CD308:
 lbl_804CDB48:
 	.skip 0x10
 
-.global lbl_804CDB58
-lbl_804CDB58:
+.global atexit_funcs
+atexit_funcs:
 	.skip 0x100
 
-.global lbl_804CDC58
-lbl_804CDC58:
+.global __atexit_funcs
+__atexit_funcs:
 	.skip 0x100
 
 .global lbl_804CDD58
 lbl_804CDD58:
 	.skip 0x18
 
-.global lbl_804CDD70
-lbl_804CDD70:
+.global gTRKEventQueue
+gTRKEventQueue:
 	.skip 0x28
 
-.global lbl_804CDD98
-lbl_804CDD98:
+.global gTRKBigEndian
+gTRKBigEndian:
 	.skip 0x8
 
-.global lbl_804CDDA0
-lbl_804CDDA0:
+.global gTRKMsgBufs
+gTRKMsgBufs:
 	.skip 0x19B0
 
-.global lbl_804CF750
-lbl_804CF750:
+.global gTRKFramingState
+gTRKFramingState:
 	.skip 0x14
 
-.global lbl_804CF764
-lbl_804CF764:
+.global gTRKInputPendingPtr
+gTRKInputPendingPtr:
 	.skip 0x4
 
-.global lbl_804CF768
-lbl_804CF768:
+.global gTRKDispatchTableSize
+gTRKDispatchTableSize:
 	.skip 0x8
 
-.global lbl_804CF770
-lbl_804CF770:
+.global TRK_saved_exceptionID
+TRK_saved_exceptionID:
 	.skip 0x4
 
-.global lbl_804CF774
-lbl_804CF774:
+.global gTRKSaveState
+gTRKSaveState:
 	.skip 0x94
 
-.global lbl_804CF808
-lbl_804CF808:
+.global TRKvalue128_temp
+TRKvalue128_temp:
 	.skip 0x10
 
-.global lbl_804CF818
-lbl_804CF818:
+.global gTRKState
+gTRKState:
 	.skip 0xA8
 
-.global lbl_804CF8C0
-lbl_804CF8C0:
+.global gTRKCPUState
+gTRKCPUState:
 	.skip 0x430
 
 .global lbl_804CFCF0
@@ -2703,14 +2703,14 @@ lbl_804CFCFC:
 lbl_804CFD10:
 	.skip 0x40
 
-.global lbl_804CFD50
-lbl_804CFD50:
+.global aram_mother
+aram_mother:
 	.skip 0x2C
 
-.global lbl_804CFD7C
-lbl_804CFD7C:
+.global pic_ctrl
+pic_ctrl:
 	.skip 0x1B0
 
-.global lbl_804CFF2C
-lbl_804CFF2C:
+.global dvd_ctrl
+dvd_ctrl:
 	.skip 0x30
