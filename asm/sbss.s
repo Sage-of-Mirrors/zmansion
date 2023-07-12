@@ -5305,4 +5305,4 @@ lbl_804D9868:
 
 .global lbl_804D986C
 lbl_804D986C:
-	.skip 0x14
+	.skip 0x1
