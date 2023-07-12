@@ -6,6 +6,12 @@ LIBS = [
         "cflags": "-nodefaults, -lang c++ -Cpp_exceptions off, -O4,p, -fp hard, -inline auto, -enum int, -str reuse",
         "host": True,
         "objects": [
+            ["__start", False],
+            ["__ppc_eabi_init", False],
+            ["__mem", False],
+            ["mem_TRK", False],
+            ["__exception", False],
+            ["dolphin_trk", False],
             ["init", False],
             ["extab_", False],
             ["extabindex_", False],
