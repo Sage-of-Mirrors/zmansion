@@ -22,7 +22,6 @@
 *.filters
 *.vcxproj
 *.user
-include/*.s
 
 build/
 tools/mwcc_compiler/*    
