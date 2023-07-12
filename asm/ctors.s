@@ -204,6 +204,3 @@ lbl_8020BAC0:
 	.4byte lbl_801D81DC
 	.4byte lbl_802065C0
 	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0

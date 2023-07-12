@@ -32606,7 +32606,4 @@ lbl_804D7FCC:
 lbl_804D7FD0:
 
 	# ROM: 0x39B950
-	.4byte 0x80000000
-	.4byte 0
-	.4byte 0
-	.4byte 0
+	.byte 0x80

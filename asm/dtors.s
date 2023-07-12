@@ -11,7 +11,3 @@ lbl_8020BDE0:
 	.4byte lbl_80202664
 	.4byte lbl_80200188
 	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0

@@ -3,16 +3,15 @@ LIBS = [
     {
         "lib": "LM",
         "mw_version": "1.1",
-        "cflags": "-nodefaults, -lang c++ -Cpp_exceptions off, -O4,p, -fp hard, -inline auto, -enum int, -str reuse",
+        "cflags": "-nodefaults -Cpp_exceptions off -O4,p, -fp hard, -inline auto, -enum int, -str reuse -i include",
         "host": True,
         "objects": [
-            ["__start", False],
+            ["Dolphin/os/__start", True],
             ["__ppc_eabi_init", False],
             ["__mem", False],
             ["mem_TRK", False],
             ["__exception", False],
             ["dolphin_trk", False],
-            ["init", False],
             ["extab_", False],
             ["extabindex_", False],
             ["text", False],

@@ -20895,10 +20895,3 @@ lbl_804DD930:
 	# ROM: 0x39FA10
 	.4byte 0x43300000
 	.4byte 0x80000000
-
-.global lbl_804DD938
-lbl_804DD938:
-
-	# ROM: 0x39FA18
-	.4byte 0
-	.4byte 0
