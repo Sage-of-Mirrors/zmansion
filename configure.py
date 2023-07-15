@@ -15,6 +15,7 @@ LIBS = [
             ["extab_", False],
             ["extabindex_", False],
             ["text", False],
+            ["JSystem/JSystem", False],
             ["Dolphin/sdk", False],
             ["Dolphin/TRK_MINNOW_DOLPHIN/mainloop", False],
             ["Dolphin/TRK_MINNOW_DOLPHIN/nubevent", False],
