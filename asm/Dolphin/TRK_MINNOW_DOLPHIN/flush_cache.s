@@ -1,0 +1,22 @@
+.include "macros.s"
+
+.section .text, "ax"  # 0x80005760 - 0x8020BAC0 ; 0x00206360
+
+
+.global lbl_80208F98
+lbl_80208F98:
+/* 80208F98 00205CF8  3C A0 FF FF */	lis r5, 0xFFFFFFF1@h
+/* 80208F9C 00205CFC  60 A5 FF F1 */	ori r5, r5, 0xFFFFFFF1@l
+/* 80208FA0 00205D00  7C A5 18 38 */	and r5, r5, r3
+/* 80208FA4 00205D04  7C 65 18 50 */	subf r3, r5, r3
+/* 80208FA8 00205D08  7C 84 1A 14 */	add r4, r4, r3
+lbl_80208FAC:
+/* 80208FAC 00205D0C  7C 00 28 6C */	dcbst r0, r5
+/* 80208FB0 00205D10  7C 00 28 AC */	dcbf r0, r5
+/* 80208FB4 00205D14  7C 00 04 AC */	sync
+/* 80208FB8 00205D18  7C 00 2F AC */	icbi r0, r5
+/* 80208FBC 00205D1C  30 A5 00 08 */	addic r5, r5, 0x8
+/* 80208FC0 00205D20  34 84 FF F8 */	addic. r4, r4, -0x8
+/* 80208FC4 00205D24  40 80 FF E8 */	bge lbl_80208FAC
+/* 80208FC8 00205D28  4C 00 01 2C */	isync
+/* 80208FCC 00205D2C  4E 80 00 20 */	blr
