@@ -1,4 +1,5 @@
-#pragma once
+#ifndef OBSERVER_H_
+#define OBSERVER_H_
 
 namespace Koga
 {
@@ -9,3 +10,5 @@ namespace Koga
       virtual Ret receiveMessage(Msg* msg) = 0;
   };
 }
+
+#endif

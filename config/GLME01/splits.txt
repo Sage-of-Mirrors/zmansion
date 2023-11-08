@@ -142,6 +142,14 @@ Koga/GameModeUtil.cpp:
 Unsorted/MapDoors.cpp:
 	.text       start:0x800B9F7C end:0x800BA2D4
 
+Unsorted/IncludeStrategy.cpp:
+	.text       start:0x800BEBF4 end:0x800BED48
+
+Sato/EnemyStrategy.cpp:
+	.text       start:0x800C2224 end:0x800C24A4
+	.data       start:0x8035A4E0 end:0x8035A598
+	.sdata      start:0x804D2E60 end:0x804D2E78
+
 Koga/CharacterEventObserver.cpp:
 	.text       start:0x800EA1B4 end:0x800EA454
 	.data       start:0x80363FA0 end:0x803640D4

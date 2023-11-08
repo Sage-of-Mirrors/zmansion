@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CHARACTER_EVENT_OBSERVER_H_
+#define CHARACTER_EVENT_OBSERVER_H_
 
 #include "Koga/Observer.h"
 
@@ -68,3 +69,5 @@ namespace Koga
     virtual bool FUN_800ea44c(CharacterEvent* msg);
   }; 
 }
+
+#endif

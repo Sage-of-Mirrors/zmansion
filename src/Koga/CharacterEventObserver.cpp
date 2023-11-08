@@ -1,5 +1,6 @@
 #include "Koga/CharacterEventObserver.h"
 
+// Required for .data to match.
 static float dummy[] = { 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f };
 
 Koga::CharacterEvent::CharacterEvent(const int& message)

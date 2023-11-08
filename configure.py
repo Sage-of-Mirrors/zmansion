@@ -201,6 +201,7 @@ config.libs = [
         "objects": [
             Object(NonMatching, "Unsorted/MoveObj.cpp"),
             Object(NonMatching, "Unsorted/Character.cpp"),
+            Object(Matching, "Sato/EnemyStrategy.cpp"),
             Object(Matching, "Koga/CharacterEventObserver.cpp"),
             Object(NonMatching, "hvqm4dec/hvqm4dec.c"),
         ],
