@@ -1,0 +1,157 @@
+Sections:
+	.init       type:code
+	extab       type:rodata
+	extabindex  type:rodata
+	.text       type:code
+	.ctors      type:rodata
+	.dtors      type:rodata
+	.rodata     type:rodata
+	.data       type:data
+	.bss        type:bss
+	.sdata      type:data
+	.sbss       type:bss
+	.sdata2     type:rodata
+
+Unsorted/MoveObj.cpp:
+	.text       start:0x800677D0 end:0x80068EF8
+
+Unsorted/Character.cpp:
+	.text       start:0x80068EF8 end:0x8006A354
+
+Sotoike/AIGirl.cpp:
+	.text       start:0x8006A594 end:0x8006ADDC
+	.ctors      start:0x8020BB44 end:0x8020BB48
+
+Sotoike/AIShower.cpp:
+	.text       start:0x8006ADDC end:0x8006BD40
+	.ctors      start:0x8020BB48 end:0x8020BB4C
+
+Sotoike/AITubone.cpp:
+	.text       start:0x8006BD40 end:0x8006C190
+	.ctors      start:0x8020BB4C end:0x8020BB50
+
+Sotoike/AIFire.cpp:
+	.text       start:0x8006C190 end:0x8006DDC8
+	.ctors      start:0x8020BB50 end:0x8020BB54
+
+Sotoike/AIShadow.cpp:
+	.text       start:0x8006DDC8 end:0x8006F298
+	.ctors      start:0x8020BB54 end:0x8020BB58
+
+Sotoike/AITurara.cpp:
+	.text       start:0x8006F298 end:0x8006F9D4
+	.ctors      start:0x8020BB58 end:0x8020BB5C
+
+Sotoike/AIFall.cpp:
+	.text       start:0x8006F9D4 end:0x80070398
+	.ctors      start:0x8020BB5C end:0x8020BB60
+
+Sotoike/AISnowman.cpp:
+	.text       start:0x80070398 end:0x80071A00
+	.ctors      start:0x8020BB60 end:0x8020BB64
+
+Sotoike/AIIce.cpp:
+	.text       start:0x80071A00 end:0x80071E80
+	.ctors      start:0x8020BB64 end:0x8020BB68
+
+Sotoike/AILamp.cpp:
+	.text       start:0x80071E80 end:0x8007214C
+	.ctors      start:0x8020BB68 end:0x8020BB6C
+
+Kawamoto/KtEnTsuri.cpp:
+	.text       start:0x800986BC end:0x8009A874
+	.ctors      start:0x8020BB80 end:0x8020BB84
+
+Kawamoto/KtEnKihon.cpp:
+	.text       start:0x8009A874 end:0x8009B678
+	.ctors      start:0x8020BB84 end:0x8020BB88
+
+Kawamoto/KtEnUranai.cpp:
+	.text       start:0x8009B678 end:0x8009BC0C
+
+Kawamoto/KtEnObaasan.cpp:
+	.text       start:0x8009BC0C end:0x8009CAAC
+
+Kawamoto/KtEnKeito.cpp:
+	.text       start:0x8009CAAC end:0x8009D450
+	.ctors      start:0x8020BB88 end:0x8020BB8C
+
+Kawamoto/KtEnGaka.cpp:
+	.text       start:0x8009D450 end:0x8009D848
+
+Kawamoto/KtEnTubone.cpp:
+	.text       start:0x8009D848 end:0x8009DD18
+
+Kawamoto/KtEnDenwa.cpp:
+	.text       start:0x8009DD18 end:0x8009E024
+
+Kawamoto/KtEnIsu02.cpp:
+	.text       start:0x8009E024 end:0x8009E180
+
+Kawamoto/KtEnBaby.cpp:
+	.text       start:0x8009E180 end:0x800A0658
+	.ctors      start:0x8020BB8C end:0x8020BB90
+
+Kawamoto/KtEnMoku.cpp:
+	.text       start:0x800A0658 end:0x800A1F28
+	.ctors      start:0x8020BB90 end:0x8020BB94
+
+Kawamoto/KtEnMoku2.cpp:
+	.text       start:0x800A1F28 end:0x800A2218
+	.ctors      start:0x8020BB94 end:0x8020BB98
+
+Kawamoto/KtEnBabyball.cpp:
+	.text       start:0x800A2218 end:0x800A3BC0
+	.ctors      start:0x8020BB98 end:0x8020BB9C
+
+Kawamoto/KtEnKoopa.cpp:
+	.text       start:0x800A3BC0 end:0x800A7120
+	.ctors      start:0x8020BB9C end:0x8020BBA0
+
+Kawamoto/KtEnKoopahead.cpp:
+	.text       start:0x800A7120 end:0x800A8A3C
+	.ctors      start:0x8020BBA0 end:0x8020BBA4
+
+Kawamoto/KtEnKoopabomb.cpp:
+	.text       start:0x800A8A3C end:0x800A9C7C
+	.ctors      start:0x8020BBA4 end:0x8020BBA8
+
+Kawamoto/KtEnPillar.cpp:
+	.text       start:0x800A9C7C end:0x800AA128
+	.ctors      start:0x8020BBA8 end:0x8020BBAC
+
+Kawamoto/KtStatic.cpp:
+	.text       start:0x800AA128 end:0x800AAF5C
+
+Kawamoto/KtUnkB0C0.cpp:
+	.text       start:0x800AB0C0 end:0x800AB71C
+
+Kawamoto/KtOyadama.cpp:
+	.text       start:0x800AB71C end:0x800AC0F0
+
+Unsorted/Player.cpp:
+	.text       start:0x800AD5AC end:0x800B9D1C
+	.ctors      start:0x8020BBAC end:0x8020BBB0
+
+Koga/MissionModeUtil.cpp:
+	.text       start:0x800B9D1C end:0x800B9E0C
+
+Koga/GameModeUtil.cpp:
+	.text       start:0x800B9E0C end:0x800B9F7C
+
+Unsorted/MapDoors.cpp:
+	.text       start:0x800B9F7C end:0x800BA2D4
+
+Koga/CharacterEventObserver.cpp:
+	.text       start:0x800EA1B4 end:0x800EA454
+	.data       start:0x80363FA0 end:0x803640D4
+	.sdata      start:0x804D3F68 end:0x804D3F78
+
+hvqm4dec/hvqm4dec.c:
+	.text       start:0x801FA5EC end:0x80200094
+
+Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+	.text       start:0x8020265C end:0x802026D8
+	.ctors      start:0x8020BAC0 end:0x8020BAC4
+	.dtors      start:0x8020BDE0 end:0x8020BDE8
+	.sdata      start:0x804D7FB0 end:0x804D7FB8
