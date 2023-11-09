@@ -41,6 +41,8 @@ Sotoike/AIShadow.cpp:
 Sotoike/AITurara.cpp:
 	.text       start:0x8006F298 end:0x8006F9D4
 	.ctors      start:0x8020BB58 end:0x8020BB5C
+	.data       start:0x8034C308 end:0x8034C570
+	.sdata      start:0x804D1E60 end:0x804D1EB8
 
 Sotoike/AIFall.cpp:
 	.text       start:0x8006F9D4 end:0x80070398

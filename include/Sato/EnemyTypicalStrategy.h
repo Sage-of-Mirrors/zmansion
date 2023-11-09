@@ -8,10 +8,10 @@
 class EnemyTypicalStrategy : public EnemyStrategyDecorator, public Koga::CharacterEventObserver {
 public:
     virtual ~EnemyTypicalStrategy() {
-        
+
     }
 
-    virtual bool onFishingBegin();
+    virtual bool onFishingBegin(Koga::CharacterEvent* msg);
 
     /* 0x20 */ EnTsuriStrategies mTsuriStrategies;
 };

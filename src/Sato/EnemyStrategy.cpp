@@ -45,11 +45,11 @@ void EnemyStrategy::doBehaviorInit() {
 
 }
 
-s32 EnemyStrategy::fn_800C2314() {
+s32 EnemyStrategy::unkEnemyStrategyFunc01() {
     return FALSE;
 }
 
-void EnemyStrategy::fn_800C231C() {
+void EnemyStrategy::unkEnemyStrategyFunc02() {
 
 }
 

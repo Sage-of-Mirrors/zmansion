@@ -205,6 +205,7 @@ config.libs = [
             Object(NonMatching, "Unsorted/IncludeStrategy.cpp"),
             Object(NonMatching, "Sato/EnStrategy.cpp"),
             Object(NonMatching, "Sato/EnemyTypicalStrategy.cpp"),
+            Object(NonMatching, "Sotoike/AITurara.cpp"),
             Object(Matching, "Koga/CharacterEventObserver.cpp"),
             Object(NonMatching, "hvqm4dec/hvqm4dec.c"),
         ],

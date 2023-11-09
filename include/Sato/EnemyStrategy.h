@@ -16,8 +16,8 @@ public:
 
     virtual void init();
     virtual void update();
-    virtual s32 fn_800C2314();
-    virtual void fn_800C231C();
+    virtual s32 unkEnemyStrategyFunc01();
+    virtual void unkEnemyStrategyFunc02();
     virtual void doBehavior();
     virtual void doBehaviorInit();
 
