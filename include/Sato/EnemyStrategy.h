@@ -6,7 +6,7 @@
 
 typedef unsigned long size_t;
 
-typedef void(*enemyStrategyInitFunc)(void* buf, int bufSize);
+typedef void*(*enemyStrategyInitFunc)(void* buf, int bufSize);
 enemyStrategyInitFunc* getEnemyStrategyInitFunc(int i_entityIdx);
 
 class EnemyStrategy : public JORReflexible {

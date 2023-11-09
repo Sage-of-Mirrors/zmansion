@@ -172,7 +172,7 @@ cflags_runtime = [
 # Game flags
 cflags_game = [
     *cflags_base,
-    "-RTTI on",
+    "-RTTI on"
 ]
 
 config.linker_version = "GC/1.1"
@@ -202,6 +202,9 @@ config.libs = [
             Object(NonMatching, "Unsorted/MoveObj.cpp"),
             Object(NonMatching, "Unsorted/Character.cpp"),
             Object(Matching, "Sato/EnemyStrategy.cpp"),
+            Object(NonMatching, "Unsorted/IncludeStrategy.cpp"),
+            Object(NonMatching, "Sato/EnStrategy.cpp"),
+            Object(NonMatching, "Sato/EnemyTypicalStrategy.cpp"),
             Object(Matching, "Koga/CharacterEventObserver.cpp"),
             Object(NonMatching, "hvqm4dec/hvqm4dec.c"),
         ],

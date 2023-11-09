@@ -150,6 +150,16 @@ Sato/EnemyStrategy.cpp:
 	.data       start:0x8035A4E0 end:0x8035A598
 	.sdata      start:0x804D2E60 end:0x804D2E78
 
+Sato/EnemyTypicalStrategy.cpp:
+	.text       start:0x800C6A28 end:0x800C6A98
+	.data       start:0x8035B0D8 end:0x8035B278
+	.sdata      start:0x804D3018 end:0x804D3048
+
+Sato/EnStrategy.cpp:
+	.text       start:0x800E4040 end:0x800E44C8
+	.data       start:0x803639B8 end:0x80363B04
+	.sdata      start:0x804D3D98 end:0x804D3DB8
+
 Koga/CharacterEventObserver.cpp:
 	.text       start:0x800EA1B4 end:0x800EA454
 	.data       start:0x80363FA0 end:0x803640D4
